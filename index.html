@@ -101,22 +101,54 @@
       margin-top: 3rem;
       font-family: 'Shadows Into Light', cursive;
     }
+
+    /* 🎧 Audio invisible */
+    audio {
+      display: none;
+    }
+
+    /* 📱 Estilos para dispositivos móviles */
+    @media (max-width: 600px) {
+      .note, .photo-frame {
+        width: 90%;
+        transform: none !important;
+      }
+
+      .mural {
+        padding: 2rem 0.5rem;
+        gap: 1.5rem;
+      }
+
+      header {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+
+      footer {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- 🎵 Música de fondo -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
 
   <header>
     💖 Mural de Recuerdos para Mi Viejo Querido 💖
   </header>
 
   <div class="mural">
-    <!-- NOTAS -->
     <div class="note" style="--r:1">
       <h3>Gracias por estar</h3>
       <p>Tu presencia me da paz. Gracias por estar ahí en cada paso, en cada caída, en cada abrazo.</p>
     </div>
 
-    <!-- FOTOS ROTADAS -->
     <div class="photo-frame" style="transform: rotate(45deg);">
       <div class="tape"></div>
       <img src="20201224_205455.jpg" alt="Papá y yo 1">
@@ -181,3 +213,4 @@
 
 </body>
 </html>
+

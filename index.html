@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mural para Mi Viejo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://www.transparenttextures.com/patterns/cardboard.png');
+      font-family: 'Shadows Into Light', cursive;
+      color: #333;
+    }
+
+    .mural {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 4rem 1rem;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .note {
+      background: #fffbea;
+      padding: 1rem;
+      border: 2px dashed #f4c542;
+      border-radius: 12px;
+      width: 300px;
+      transform: rotate(calc(-2deg + 4deg * var(--r)));
+      box-shadow: 4px 6px 12px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    .note::before {
+      content: "📌";
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.8rem;
+    }
+
+    .note h3 {
+      margin-top: 0;
+      color: #c85555;
+      font-size: 1.6rem;
+    }
+
+    .note p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .photo-frame {
+      background: #fff;
+      border: 3px solid #ddd;
+      padding: 0.5rem;
+      box-shadow: 6px 6px 14px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      width: 240px;
+      position: relative;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      border-radius: 6px;
+      height: auto;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+
+    .tape {
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      background: #ffd2d2;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-6deg);
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #fff8e7;
+      font-size: 2rem;
+      color: #b94e4e;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff2f2;
+      color: #944;
+      font-size: 1.2rem;
+      margin-top: 3rem;
+      font-family: 'Shadows Into Light', cursive;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    💖 Mural de Recuerdos para Mi Viejo Querido 💖
+  </header>
+
+  <div class="mural">
+    <!-- NOTAS -->
+    <div class="note" style="--r:1">
+      <h3>Gracias por estar</h3>
+      <p>Tu presencia me da paz. Gracias por estar ahí en cada paso, en cada caída, en cada abrazo.</p>
+    </div>
+
+    <!-- FOTOS ROTADAS -->
+    <div class="photo-frame" style="transform: rotate(45deg);">
+      <div class="tape"></div>
+      <img src="20201224_205455.jpg" alt="Papá y yo 1">
+    </div>
+
+    <div class="note" style="--r:2">
+      <h3>Mi ejemplo</h3>
+      <p>Desde pequeño soñé con ser como tú. Gracias por enseñarme con el corazón, no solo con palabras.</p>
+    </div>
+
+    <div class="photo-frame" style="transform: rotate(-60deg);">
+      <div class="tape"></div>
+      <img src="IMG_20240120_190333.jpg" alt="Viaje juntos">
+    </div>
+
+    <div class="note" style="--r:3">
+      <h3>Compañero de vida</h3>
+      <p>Jugar, reír, caminar a tu lado... son momentos que guardo como tesoros. ¡Gracias por compartirlos conmigo!</p>
+    </div>
+
+    <div class="photo-frame" style="transform: rotate(75deg);">
+      <div class="tape"></div>
+      <img src="fut.jpg" alt="Diversión juntos">
+    </div>
+
+    <div class="note" style="--r:4">
+      <h3>Mi refugio</h3>
+      <p>Cuando todo va mal, pensar en ti me calma. Eres más que un padre: eres mi hogar, mi refugio seguro.</p>
+    </div>
+
+    <div class="photo-frame" style="transform: rotate(-90deg);">
+      <div class="tape"></div>
+      <img src="log.jpg" alt="Orgullo papá">
+    </div>
+
+    <div class="note" style="--r:5">
+      <h3>Mi héroe silencioso</h3>
+      <p>No necesitas ruidos ni capas. Tus actos, tus silencios, tu amor... hacen magia todos los días.</p>
+    </div>
+
+    <div class="photo-frame" style="transform: rotate(60deg);">
+      <div class="tape"></div>
+      <img src="pequeño.jpg" alt="Papá sonriente">
+    </div>
+
+    <div class="note" style="--r:6">
+      <h3>Te amo, viejo</h3>
+      <p>Con todas mis fuerzas. Por todo lo que has sido, por todo lo que eres, y por lo que siempre serás en mi vida.</p>
+    </div>
+
+    <div class="photo-frame" style="transform: rotate(-45deg);">
+      <div class="tape"></div>
+      <img src="fam.jpg" alt="Papá y yo abrazados">
+    </div>
+  </div>
+
+  <footer>
+    🌟 ¡Feliz día al mejor papá del universo! 🌟<br>
+    Siempre serás mi mayor orgullo, mi guía y mi mejor amigo.<br>
+    Con amor infinito, tu hijo/a 💛
+  </footer>
+
+</body>
+</html>
